@@ -72,18 +72,18 @@ router.route('/:id')
   .delete((req, res) => {
     const { id } = req.params;
 
-  const listIndex = lists.findIndex(li => li.id == id);
+  const bookmarkIndex = bookmarks.findIndex(bkmrk => bkmrk.id === id);
 
-  if (listIndex === -1) {
-    logger.error(`List with id ${id} not found.`);
+  if (bookmarkIndex === -1) {
+    logger.error(`Bookmark with id ${id} not found.`);
     return res 
       .status(404)
       .send('Not Found');
   }
 
-  list.splice(listIndex, 1);
+  bookmarks.splice(bookmarkIndex, 1);
 
-  logger.info(`List with id ${id} deleted.`);
+  logger.info(`Bookmark with id ${id} deleted.`);
   res
     .status(204)
     .end();

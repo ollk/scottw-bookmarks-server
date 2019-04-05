@@ -11,3 +11,7 @@
 {"message":"Rating must be a number between 1 and 5","level":"error"}
 {"message":"Rating must be a number between 1 and 5","level":"error"}
 {"message":"Bookmark with id 2bbcd885-fbe8-4e25-8797-246f46920f4f created","level":"info"}
+{"message":"Bookmark with id a146020b-6602-4f44-a7fa-b89e5957a437 created","level":"info"}
+{"message":"Bookmark with id 7ba80120-5e23-4948-ba43-7bc8d1216038 created","level":"info"}
+{"message":"Bookmark with id 189452b8-253d-4aff-b289-ce0d25cbda53 created","level":"info"}
+{"message":"Bookmark with id 189452b8-253d-4aff-b289-ce0d25cbda53 deleted.","level":"info"}
