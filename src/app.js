@@ -19,6 +19,10 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.json('hello world')
+} );
+
 app.use(auth);
 app.use('/bookmarks', router);
 
