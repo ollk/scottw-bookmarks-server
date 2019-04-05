@@ -1,13 +1,13 @@
 const logger = require('./logger');
 
 module.exports = function validateBearerToken (req, res, next) {
-  console.log('test');
+  logger.error('test');
 
   const apiToken = process.env.API_TOKEN;
 
-  console.log('apiToken', apiToken);
+  console.error('apiToken', apiToken);
 
-  const authToken = req.get('Authorization');
+  const authToken = req.get('Authoriz');
 
   console.log('authToken', authToken);
 
