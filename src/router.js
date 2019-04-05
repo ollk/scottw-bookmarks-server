@@ -87,6 +87,19 @@ router.route('/:id')
   res
     .status(204)
     .end();
+  })
+  .get((req, res) => {
+    const { id } = req.params;
+    const bookmark = bookmarks.find(bkmrk => bkmrk.id === id);
+
+    if (!bookmark) {
+      logger.error(`Bookmark with id ${id} not found.`)
+      return res 
+        .status(404)
+        .send('Not Found');
+    }
+
+    res.json(bookmark);
   });
 
 
